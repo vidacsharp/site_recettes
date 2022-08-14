@@ -1,0 +1,128 @@
+/*commentaire sur le css*/
+*{/*valable partout */
+    overflow: auto;/*readapter la taille du contenant pour contenir tout ce qui deborde */
+}
+
+body{
+    background-color: #8BA1BB;/*couleur en hexadecimale 2chiffres pour Rouge  2 chiffres suivants vert 2 chiffres suivants bleu et option 2 chiffres suivants opacité*/
+    font-family: Arial, Helvetica, sans-serif;  
+    margin: 0;              
+}
+div.contenu{
+    background-color: white;
+    margin: 0px 10% 80px 10%;
+    padding: 30px;
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.5);
+}
+.centre{
+    text-align: center;
+    width: 100%;/*toutes les balises avec la div centre ne doivent pas dépasser les 100%*/
+}
+div.categorie{
+    margin-bottom: -18px;/*Faire chevaucher la div categorie sur la div contenu*/
+    margin-top: 60px;
+}
+div.separateur{
+    width: 100px;
+    height: 1px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.info{
+    position:relative;
+}
+div.colonne1{   
+    display: inline-block;
+    margin-right: 10%;
+}
+div.colonne2{
+    float: right;    
+}
+div.colonne{
+    width: 45%;
+    margin-top: 20px;
+}
+div.colonne h2{/*gestion des titres de liste*/
+    text-align: center;/*text centre*/
+    text-transform: uppercase;/*text en majuscule*/
+    font-size: 15px;
+    border-bottom: 5px solid #6C829D;
+    padding-bottom: 5px;
+}
+div.ingredients p{
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid lightgray;
+    padding: 8px 0;
+    margin-top: 4px;
+    margin-bottom: 0;
+
+}
+p.categorie{
+    background-color: black;
+    color: white;
+    display: inline-block;/*espace necessaire et alignement .... controlables*/                
+    margin-top: 0px;/*marges ext haut droite bas gauche,dans ce cas partout ou verticales, horizontales*/
+    padding: 8px 18px;/*marges int verticales horizontales*/
+    margin-bottom: 0;
+    font-weight: bold;/*text en gras*/
+    font-size: 16px;/*taille police*/
+}
+p.decription{
+    text-align: center;
+    max-width: 400px;   /*ddefinir une taille max, la ici on ne perd pas les deux lignes lors de l'etirement de la page */             
+    display: inline-block;
+    font-size: 14px;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+img.info{
+    display: block;
+    max-height: 400px;
+    object-fit: cover;/*l"image s'adapte selon l'etirement de la page*/
+    min-height: 200px;/*emplacement minimale de l'image */
+    background-color: lightblue;/*emplacement de l'image en bleue , visible avant le chargement complet de l'image*/
+}
+table.info{
+    border: 1px;
+    position:absolute;bottom:0;width: 100%;color:white;background-color: #6C829DC0;height:80px
+}
+table.info td{/*tous les td qui sont dans la table */
+    text-align: center;
+    font-size: 14px;
+    vertical-align: top;
+}
+table.info th{/*tous les td qui sont dans la table */                
+    font-size: 16px;
+    vertical-align: bottom;    
+}
+table.preparation p.numero{
+    background-color: #6C829D;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0;
+}
+table.preparation td{
+    vertical-align: top;
+    padding-bottom: 10px;
+}
+table.preparation tr{
+    height: 50px;
+}
+
+table.preparation td.preparation_etape{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
